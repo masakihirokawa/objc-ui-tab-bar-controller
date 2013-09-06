@@ -1,0 +1,28 @@
+//
+// Prefix header for all source files of the 'UITabBarControllerSample' target in the 'UITabBarControllerSample' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#import "AppDelegate.h"
+#define APP_DELEGATE (AppDelegate*)[[UIApplication sharedApplication] delegate]
+
+#define TITLE_RECT   CGRectMake(0, 0, 320, 48)
+#define BTN_RECT     CGRectMake(20, 220, 280, 48)
+
+typedef enum viewControllerIndexId : NSUInteger {
+    FIRST_ID  = 0,
+    SECOND_ID = 1,
+    THIRD_ID  = 2,
+    FOURTH_ID = 3,
+    FIFTH_ID  = 4
+} viewControllerIndexId;
